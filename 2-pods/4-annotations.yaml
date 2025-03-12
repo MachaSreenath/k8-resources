@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotationpod
+  annotations:
+    otherthantext: "www.google.com"
+    westoreurlsalso: "https://www.internshala.com"
+spec:
+  containers:
+  - name: anncontainer
+    image: nginx
