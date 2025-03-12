@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: morecontainers
+spec:
+  containers:
+  - name: container-1
+    image: nginx
+  - name: contaienr-2
+    image: almalimux
