@@ -8,6 +8,6 @@ spec:
     image: nginx
     env:
     - name: myname
-      value: dontknow
+      value: sree
     - name: yourname
-      value: youknow
+      value: hari
