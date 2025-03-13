@@ -7,7 +7,7 @@ spec:
   - name: envcontaienr
     image: nginx
     env:
-    - name: myname
-      value: sree
-    - name: yourname
-      value: hari
+    - name: MY_NAME
+      value: "sree"
+    - name: YOUR_NAME
+      value: "hari"
