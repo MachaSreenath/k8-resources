@@ -9,7 +9,7 @@ spec:
         nodeSelectorTerms:
         - matchExpressions:
             - key: code
-              operator: "Exists"
+              operator: In
               values:
               - nodeaffinity
   containers:
