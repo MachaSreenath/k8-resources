@@ -1,17 +1,17 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: antiafinity
+  name: node-anti-affinity-pod
 spec:
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
-          - matchExpressions:
-              - key: code
-                operator: NotIn
-                values:
-                - antiafinity
+        - matchExpressions:
+          - key: code
+            operator: NotIn
+            values:
+            - codeforantiaffinity
   containers:
   - name: containerforanti
     image: nginx
