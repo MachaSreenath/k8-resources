@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: toleration-pod
+spec:
+  containers:
+    - name: test-pod
+      image: nginx
+  tolerations:
+  - key: college
+    operator: "Exists"
+    effect: "NoSchedule"
